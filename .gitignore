@@ -1,0 +1,32 @@
+.DS_Store
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.env
+.venv/
+venv/
+
+# Raw NBA injury-report PDFs should not live in normal Git history
+data_raw/pdf/
+**/pdf/*.pdf
+
+# Temporary/local files
+*.tmp
+*.log
+
+# Local Python environments
+.venv*/
+venv/
+
+# Re-generated portable analysis outputs
+results/portable_*/
+results/portable_*.zip
+
+# Stage 10 rebuildable reliability panels
+data_intermediate/reliability_stage10/
+
+# Raw-data rebuild scratch outputs (never commit raw NBA PDFs/JSON here)
+data_rebuild/output/
+
+# October rerun scratch results
+results/october_2026/recomputed/
